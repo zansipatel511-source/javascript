@@ -197,7 +197,7 @@ for (let i = 0; i <= apple_pro.length - 1; i++) {
 
 
 // problem 11 //
-let products = ["macbook", "iphone", "ipad", "airpods"];
+/*let products = ["macbook", "iphone", "ipad", "airpods"];
 let price = [180000, 80000, 55000, 20000];
 
 let arr=[];
@@ -208,4 +208,4 @@ for (let i=0;i<=products.length-1;i++){
   arr.push(obj);
 }
 
-console.log(arr);
+console.log(arr);*/
