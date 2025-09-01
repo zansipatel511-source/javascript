@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        async function test() {
-            //const response = await fetch("json/student_data.json");
-            //const students = await response.json();
+        async function test() 
+        {
+            const response = await fetch("http://localhost:3000/0");
+            const students = await response.json();
         
-            //return students;
-            return (await fetch("json/student_data.json")).json();
+            return students;
         }
-        test().then((res) => {
+        test().then((res) => 
+        {
             console.log(res);
         }).catch((error) => {
             console.log(error);
