@@ -6,17 +6,17 @@
     <title>Document</title>
     <script>
         async function test() {
-            console.log("2 : Message");
-            const response = await fetch("json/student_data.json");
-            console.log("3 : Message");
-            const students = await response.json();
+            //const response = await fetch("json/student_data.json");
+            //const students = await response.json();
         
-            return students;
+            //return students;
+            return (await fetch("json/student_data.json")).json();
         }
-        console.log("1 : Message");
-        let a = test();
-        console.log("4 : Message");
-        console/log(a);
+        test().then((res) => {
+            console.log(res);
+        }).catch((error) => {
+            console.log(error);
+        });
     </script>
 </head>
 <body>
